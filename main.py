@@ -17,7 +17,7 @@ class SMZDM_Bot(object):
 
     def __json_check(self, msg):
         """
-        对请求 盖乐世社区 返回的数据进行进行检查
+        对请求返回的数据进行检查
         1.判断是否 json 形式
         """
         try:
@@ -32,7 +32,7 @@ class SMZDM_Bot(object):
         """
         起一个什么值得买的，带cookie的session
         cookie 为浏览器复制来的字符串
-        :param cookie: 登录过的社区网站 cookie
+        :param cookie: 登录过的网站cookie
         """
         self.session.headers['Cookie'] = cookies    
 
