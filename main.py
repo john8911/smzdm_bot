@@ -38,7 +38,7 @@ class SMZDM_Bot(object):
 
     def checkin(self):
         """
-        签到函数
+        签到地址
         """
         url = 'https://zhiyou.smzdm.com/user/checkin/jsonp_checkin'
         msg = self.session.get(url)
@@ -63,4 +63,4 @@ if __name__ == '__main__':
         push_to_wechat(text = '什么值得买每日签到',
                         desp = str(res),
                         secretKey = SERVERCHAN_SECRETKEY)
-    print('代码完毕')
+    print('运行完毕')
